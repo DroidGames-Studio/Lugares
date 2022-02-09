@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "991567431344",
+    "project_id": "login-fidelitas",
+    "storage_bucket": "login-fidelitas.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:991567431344:android:b7d08ffbf5b38958a99d75",
+        "android_client_info": {
+          "package_name": "com.droidgamestd.loginfirebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "991567431344-fj1oqnr8jm9675po6d3jdqqlj35h3ua7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCh-xBfr5hn-AdeUeQj7_M40ACXZng2zv0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "991567431344-fj1oqnr8jm9675po6d3jdqqlj35h3ua7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

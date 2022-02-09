@@ -6,59 +6,60 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/tv_usuario"
-        android:layout_width="327dp"
-        android:layout_height="77dp"
-        android:layout_marginTop="40dp"
-        android:layout_marginEnd="48dp"
-        android:layout_marginBottom="25dp"
-        android:text="@string/txtuser"
-        app:layout_constraintBottom_toTopOf="@+id/tv_password"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.916"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/tv_password"
-        android:layout_width="327dp"
-        android:layout_height="77dp"
-        android:layout_marginTop="25dp"
-        android:layout_marginEnd="48dp"
-        android:layout_marginBottom="512dp"
-        android:text="@string/txtpass"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.944"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_usuario" />
-
     <ImageButton
-        android:id="@+id/imageButton"
+        android:id="@+id/bt_register"
         android:layout_width="153dp"
         android:layout_height="48dp"
         android:layout_marginStart="38dp"
-        android:layout_marginTop="19dp"
         android:layout_marginEnd="17dp"
         android:layout_marginBottom="436dp"
+        android:contentDescription="Register"
+        android:src="@drawable/ic_register"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/imageButton2"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_password"
-        android:src="@drawable/ic_register" />
+        app:layout_constraintEnd_toStartOf="@+id/bt_login"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <ImageButton
-        android:id="@+id/imageButton2"
+        android:id="@+id/bt_login"
         android:layout_width="153dp"
-        android:layout_height="47dp"
-        android:layout_marginStart="17dp"
-        android:layout_marginTop="19dp"
-        android:layout_marginEnd="50dp"
+        android:layout_height="48dp"
         android:layout_marginBottom="437dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginStart="17dp"
+        android:contentDescription="Login"
+        android:src="@drawable/ic_login"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/imageButton"
-        app:layout_constraintTop_toBottomOf="@+id/tv_password"
-        android:src="@drawable/ic_login" />
+        app:layout_constraintStart_toEndOf="@+id/bt_register" />
+
+    <EditText
+        android:id="@+id/etUsername"
+        android:layout_width="328dp"
+        android:layout_height="101dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:hint="@string/txtuser"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etPass"
+        android:layout_width="328dp"
+        android:layout_height="82dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="49dp"
+        android:layout_marginBottom="22dp"
+        android:ems="10"
+        android:hint="@string/txtpass"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/bt_register"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etUsername" />
 </androidx.constraintlayout.widget.ConstraintLayout>
