@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Login_Firebase.iml" filepath="$PROJECT_DIR$/.idea/modules/Login_Firebase.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Login_Firebase.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Login_Firebase.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Lugares.iml" filepath="$PROJECT_DIR$/.idea/modules/Lugares.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Lugares.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Lugares.app.iml" />
     </modules>
   </component>
 </project>

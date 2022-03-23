@@ -1,65 +1,68 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
     tools:context=".MainActivity">
 
-    <ImageButton
-        android:id="@+id/bt_register"
-        android:layout_width="153dp"
-        android:layout_height="48dp"
-        android:layout_marginStart="38dp"
-        android:layout_marginEnd="17dp"
-        android:layout_marginBottom="436dp"
-        android:contentDescription="Register"
-        android:src="@drawable/ic_register"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/bt_login"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <ImageButton
-        android:id="@+id/bt_login"
-        android:layout_width="153dp"
-        android:layout_height="48dp"
-        android:layout_marginBottom="437dp"
-        android:layout_marginEnd="50dp"
-        android:layout_marginStart="17dp"
-        android:contentDescription="Login"
-        android:src="@drawable/ic_login"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/bt_register" />
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_correo"
+        android:textAlignment="center"
+        android:textSize="34sp"
+        android:textStyle="bold" />
 
     <EditText
-        android:id="@+id/etUsername"
-        android:layout_width="328dp"
-        android:layout_height="101dp"
-        android:layout_marginStart="36dp"
-        android:layout_marginTop="32dp"
+        android:id="@+id/et_correo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="@string/txtuser"
-        android:inputType="textPersonName"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:inputType="textEmailAddress"
+        android:textAlignment="center"
+        android:textSize="34sp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_clave"
+        android:textAlignment="center"
+        android:textSize="34sp" />
 
     <EditText
-        android:id="@+id/etPass"
-        android:layout_width="328dp"
-        android:layout_height="82dp"
-        android:layout_marginStart="34dp"
-        android:layout_marginTop="26dp"
-        android:layout_marginEnd="49dp"
-        android:layout_marginBottom="22dp"
+        android:id="@+id/et_clave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/msg_clave"
         android:ems="10"
-        android:hint="@string/txtpass"
-        android:importantForAutofill="no"
-        android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/bt_register"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etUsername" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:inputType="textPassword"
+        android:textAlignment="center"
+        android:textSize="34sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/bt_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:contentDescription="@string/msg_btRegister"
+            app:srcCompat="@drawable/ic_register" />
+
+        <ImageButton
+            android:id="@+id/bt_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:contentDescription="@string/msg_btLogin"
+            app:srcCompat="@drawable/ic_login" />
+    </LinearLayout>
+</LinearLayout>
