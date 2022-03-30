@@ -1,6 +1,5 @@
 package com.lugares.utiles
 
-
 import android.app.Activity
 import android.content.Context
 import android.media.MediaRecorder
@@ -15,8 +14,8 @@ import android.provider.MediaStore
 import android.widget.Toast
 import androidx.annotation.RequiresApi
 import androidx.core.app.ActivityCompat
-import com.droidgameslugares.R
-import com.lugares.utiles.OtrosUtiles
+import com.isc.lugares.utiles.OtrosUtiles
+import com.lugares.R
 import java.io.IOException
 import java.lang.IllegalStateException
 
@@ -123,4 +122,3 @@ class AudioUtiles (
         }
     }
 }
-

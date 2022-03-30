@@ -15,7 +15,7 @@ data class Lugar(
     val altura: Double?,
     val rutaAudio: String?,
     val rutaImagen: String?
-) : Parcelable {
-    constructor ():
-            this("","","","","",0.0,0.0,0.0,"","")
+) : Parcelable{
+    constructor():
+            this("", "", "", "", "", 0.0, 0.0, 0.0, "", "")
 }

@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="20dp"
-    tools:context="com.lugares.MainActivity">
+    tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/textView"
@@ -65,7 +65,4 @@
             android:contentDescription="@string/msg_btLogin"
             app:srcCompat="@drawable/ic_login" />
     </LinearLayout>
-
-
-
 </LinearLayout>

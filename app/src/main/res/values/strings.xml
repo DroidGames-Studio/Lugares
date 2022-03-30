@@ -48,12 +48,6 @@
     <string name="msg_saludos">Saludos amigos</string>
     <string name="msg_mensaje_correo">Le escribo este correo para</string>
     <string name="msg_datos">Faltan datos</string>
-    <string name="msg_firebase_add">Lugar agregado</string>
-    <string name="msg_firebase_update">Lugar modificado</string>
-    <string name="msg_firebase_delete">Lugar eliminado</string>
-    <string name="msg_firebase_no_add">ERROR: Lugar no agregado</string>
-    <string name="msg_firebase_no_update">ERROR: Lugar no actualizado</string>
-    <string name="msg_firebase_no_delete">ERROR: Lugar no eliminado</string>
     <string name="error">Error</string>
 
     <string name="msgEscucharAudio">Escuchar nota de audio</string>
@@ -70,6 +64,6 @@
     <string name="msg_detener_audio">Nota de audio detenida</string>
     <string name="msg_subiendo_audio">Subiendo Nota Audio</string>
     <string name="msg_subiendo_imagen">Subiendo imagen</string>
-    <string name="todo">Todo</string>
+    <string name="todo">TODO</string>
 
 </resources>

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.lugares.ui.lugar.UpdateLugarFragment" >
+    tools:context=".ui.lugar.UpdateLugarFragment" >
 
     <ScrollView
         android:layout_width="0dp"
@@ -105,6 +105,7 @@
                     android:layout_weight="1"
                     android:contentDescription="@string/msgEscucharAudio"
                     android:src="@drawable/ic_play" />
+
             </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
@@ -158,6 +159,7 @@
                 android:scaleType="centerInside"
                 tools:ignore="ImageContrastCheck"
                 tools:src="@tools:sample/backgrounds/scenic" />
+
         </LinearLayout>
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

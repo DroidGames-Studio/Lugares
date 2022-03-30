@@ -1,10 +1,8 @@
 package com.lugares
 
-import android.content.ContentValues.TAG
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import android.widget.Toast
 import com.google.firebase.FirebaseApp
 import com.google.firebase.auth.FirebaseAuth
@@ -34,7 +32,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun haceLogin() {
-        val email = binding.etCorreo.text.toString().filterNot { it.isWhitespace() }
+        val email = binding.etCorreo.text.toString()
         val clave = binding.etClave.text.toString()
 
         //Se usa la función para crear un usuario por medio de correo y contraseña
@@ -44,7 +42,6 @@ class MainActivity : AppCompatActivity() {
                     val user = auth.currentUser
                     actualiza(user)
                 } else {
-                    Log.w(TAG, "signInWithEmailAndPassword:failure", task.exception)
                     Toast.makeText(baseContext,
                         getString(R.string.msg_fallo_login),
                         Toast.LENGTH_SHORT).show()
@@ -54,16 +51,16 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun haceRegistro() {
-        val email = binding.etCorreo.text.toString().filterNot { it.isWhitespace() }
+        val email = binding.etCorreo.text.toString()
         val clave = binding.etClave.text.toString()
 
         //Se usa la función para crear un usuario por medio de correo y contraseña
-        auth.createUserWithEmailAndPassword(email,clave).addOnCompleteListener(this) { task ->
+        auth.createUserWithEmailAndPassword(email,clave)
+            .addOnCompleteListener(this) { task ->
                 if (task.isSuccessful) {
                     val user = auth.currentUser
                     actualiza(user)
                 } else {
-                    Log.w(TAG, "createUserWithEmail:failure", task.exception)
                     Toast.makeText(baseContext,
                         getString(R.string.msg_fallo_registro),
                         Toast.LENGTH_SHORT).show()

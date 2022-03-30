@@ -16,13 +16,16 @@ class LugarViewModel(application: Application)
     init {
         getAllData = repository.getAllData
     }
+
     fun addLugar(lugar: Lugar) {
-        repository.addLugar(lugar)
+        repository.addLugar(lugar);
     }
+
     fun updateLugar(lugar: Lugar) {
-        repository.updateLugar(lugar)
+        repository.updateLugar(lugar);
     }
+
     fun deleteLugar(lugar: Lugar){
-        repository.deleteLugar(lugar)
+        repository.deleteLugar(lugar);
     }
 }
